@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Tade import views
+from Practicando.views import saludo, dia_de_hoy, muestra_nombre, probando_template
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,5 +26,9 @@ urlpatterns = [
     path('cursos/', views.cursos),
     path('profesores/', views.profesores),
     path('estudiantes/', views.estudiantes),
-    path('entregables/', views.entregables)
+    path('entregables/', views.entregables),
+    path('saludo/', saludo),
+    path('diaDeHoy/',dia_de_hoy),
+    path('muestra_nombre/<nombre>/', muestra_nombre),
+    path('probando_template/', probando_template),
 ]

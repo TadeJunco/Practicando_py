@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render # type: ignore
+from django.http import HttpResponse # type: ignore
 
 def inicio(request):
     return HttpResponse("Vista inicio")
@@ -15,3 +15,7 @@ def estudiantes(request):
 
 def entregables(request):
     return HttpResponse("Vista entregables")
+
+
+	
+
