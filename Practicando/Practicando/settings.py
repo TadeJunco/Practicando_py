@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Practicando.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['./Practicando/plantilla/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
